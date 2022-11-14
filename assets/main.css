@@ -372,26 +372,6 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	margin-top: 1rem;
 }
 
-#text03 {
-	color: #FFFFFF;
-	font-family: 'Inter', sans-serif;
-	font-size: 1.5em;
-	line-height: 1;
-	font-weight: 100;
-}
-
-#text03 a {
-	text-decoration: underline;
-}
-
-#text03 a:hover {
-	text-decoration: none;
-}
-
-#text03 span.p:nth-child(n + 2) {
-	margin-top: 1rem;
-}
-
 #text05 {
 	color: rgba(255,255,255,0.522);
 	font-family: 'Inter', sans-serif;
@@ -802,6 +782,77 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	transform: scale(1.095);
 }
 
+.buttons {
+	cursor: default;
+	display: flex;
+	justify-content: var(--flex-alignment);
+	letter-spacing: 0;
+	padding: 0;
+}
+
+.buttons li {
+	max-width: 100%;
+}
+
+.buttons li a {
+	align-items: center;
+	justify-content: center;
+	max-width: 100%;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+#buttons01 {
+	gap: 0.75rem;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#buttons01 li a {
+	display: inline-block;
+	width: auto;
+	height: 2.5rem;
+	line-height: 2.5rem;
+	padding: 0 1.25rem;
+	vertical-align: middle;
+	font-family: 'Barlow', sans-serif;
+	font-size: 1.125em;
+	font-weight: 800;
+	border-radius: 0rem;
+	direction: var(--site-language-direction);
+	overflow: hidden;
+	text-overflow: ellipsis;
+	transition: transform 0.5s ease, color 0.5s ease, background-color 0.5s ease, border-color 0.5s ease;
+}
+
+#buttons01 .button {
+	background-color: rgba(255,255,255,0.129);
+	color: #FFFFFF;
+	background-image: linear-gradient(207deg, #00FF94 0%, transparent 68%);
+	background-position: 0% 0%;
+	background-repeat: repeat;
+	background-size: cover;
+}
+
+#buttons01 .button:hover {
+	background-color: #9544C7 !important;
+}
+
+#buttons01 li a:hover {
+	transform: scale(1.1125);
+}
+
+#buttons01 .n01 {
+	background-color: #6A1791;
+	color: #FFFFFF;
+}
+
+#buttons01 .n01:hover {
+	background-color: #5A0482 !important;
+}
+
 hr {
 	border: 0;
 	padding: 0;
@@ -956,13 +1007,6 @@ hr:before {
 		width: 100%;
 		font-size: 2.25em;
 		line-height: 1.125;
-	}
-	
-	#text03 {
-		letter-spacing: 0rem;
-		width: 100%;
-		font-size: 1.5em;
-		line-height: 1;
 	}
 	
 	#text05 {
@@ -1131,6 +1175,15 @@ hr:before {
 		gap: 1.25rem;
 	}
 	
+	#buttons01 {
+		gap: 0.75rem;
+	}
+	
+	#buttons01 li a {
+		letter-spacing: 0rem;
+		font-size: 1.125em;
+	}
+	
 	#divider01:not(:first-child) {
 		margin-top: 2rem !important;
 	}
@@ -1155,6 +1208,16 @@ hr:before {
 	
 	#container01 > .wrapper > .inner {
 		--spacing: 0.65625rem;
+	}
+	
+	#buttons01 {
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+	
+	#buttons01 li a {
+		max-width: 32rem;
+		width: 100%;
 	}
 }
 
@@ -1193,10 +1256,6 @@ hr:before {
 	
 	#text02 {
 		font-size: 2.25em;
-	}
-	
-	#text03 {
-		font-size: 1.5em;
 	}
 	
 	#text05 {
@@ -1240,5 +1299,9 @@ hr:before {
 	
 	#icons01 {
 		gap: 0.9375rem;
+	}
+	
+	#buttons01 {
+		gap: 0.5625rem;
 	}
 }

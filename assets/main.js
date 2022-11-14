@@ -1824,7 +1824,7 @@
 		onvisible.add('#icons01', { style: 'fade-right', speed: 1500, intensity: 5, delay: 0, stagger: 250, replay: true });
 		onvisible.add('#text01', { style: 'fade-left', speed: 1875, intensity: 10, delay: 1000, staggerOrder: '', replay: true });
 		onvisible.add('#text02', { style: 'fade-left', speed: 1875, intensity: 10, delay: 250, staggerOrder: '', replay: true });
-		onvisible.add('#text03', { style: 'fade-left', speed: 1250, intensity: 10, delay: 0, staggerOrder: '', replay: false });
+		onvisible.add('#buttons01', { style: 'fade-in', speed: 1500, intensity: 5, delay: 0, replay: true });
 		onvisible.add('#text05', { style: 'fade-in', speed: 1875, intensity: 10, delay: 500, staggerOrder: '', replay: true });
 		onvisible.add('#text06', { style: 'fade-in', speed: 2500, intensity: 10, delay: 500, staggerOrder: '', replay: true });
 		onvisible.add('#text07', { style: 'fade-in', speed: 1875, intensity: 10, delay: 500, staggerOrder: '', replay: true });
