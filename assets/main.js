@@ -446,6 +446,183 @@
 				header, footer, name, hideHeader, hideFooter, disableAutoScroll,
 				h, e, ee, k,
 				locked = false,
+				scrollPointParent = function(target) {
+	
+					var target;
+	
+					target = event.target;
+	
+					while (target) {
+	
+						if (target.parentElement
+						&&	target.parentElement.tagName == 'SECTION')
+							break;
+	
+						target = target.parentElement;
+	
+					}
+	
+					return target;
+	
+				},
+				doNextScrollPoint = function(event) {
+	
+					var e, target, id;
+	
+					// Prevent default.
+						event.preventDefault();
+						event.stopPropagation();
+	
+					// Determine parent element.
+						e = scrollPointParent(event.target);
+	
+						if (!e)
+							return;
+	
+					// Find next scroll point.
+						while (e && e.nextElementSibling) {
+	
+							e = e.nextElementSibling;
+	
+							if (e.dataset.scrollId) {
+	
+								target = e;
+								id = e.dataset.scrollId;
+								break;
+	
+							}
+	
+						}
+	
+						if (!target
+						||	!id)
+							return;
+	
+					// Redirect.
+						if (target.dataset.scrollInvisible == '1')
+							scrollToElement(target);
+						else
+							location.href = '#' + id;
+	
+				},
+				doPreviousScrollPoint = function(e) {
+	
+					var e, target, id;
+	
+					// Prevent default.
+						event.preventDefault();
+						event.stopPropagation();
+	
+					// Determine parent element.
+						e = scrollPointParent(event.target);
+	
+						if (!e)
+							return;
+	
+					// Find previous scroll point.
+						while (e && e.previousElementSibling) {
+	
+							e = e.previousElementSibling;
+	
+							if (e.dataset.scrollId) {
+	
+								target = e;
+								id = e.dataset.scrollId;
+								break;
+	
+							}
+	
+						}
+	
+						if (!target
+						||	!id)
+							return;
+	
+					// Redirect.
+						if (target.dataset.scrollInvisible == '1')
+							scrollToElement(target);
+						else
+							location.href = '#' + id;
+	
+				},
+				doFirstScrollPoint = function(e) {
+	
+					var e, target, id;
+	
+					// Prevent default.
+						event.preventDefault();
+						event.stopPropagation();
+	
+					// Determine parent element.
+						e = scrollPointParent(event.target);
+	
+						if (!e)
+							return;
+	
+					// Find first scroll point.
+						while (e && e.previousElementSibling) {
+	
+							e = e.previousElementSibling;
+	
+							if (e.dataset.scrollId) {
+	
+								target = e;
+								id = e.dataset.scrollId;
+	
+							}
+	
+						}
+	
+						if (!target
+						||	!id)
+							return;
+	
+					// Redirect.
+						if (target.dataset.scrollInvisible == '1')
+							scrollToElement(target);
+						else
+							location.href = '#' + id;
+	
+				},
+				doLastScrollPoint = function(e) {
+	
+					var e, target, id;
+	
+					// Prevent default.
+						event.preventDefault();
+						event.stopPropagation();
+	
+					// Determine parent element.
+						e = scrollPointParent(event.target);
+	
+						if (!e)
+							return;
+	
+					// Find last scroll point.
+						while (e && e.nextElementSibling) {
+	
+							e = e.nextElementSibling;
+	
+							if (e.dataset.scrollId) {
+	
+								target = e;
+								id = e.dataset.scrollId;
+	
+							}
+	
+						}
+	
+						if (!target
+						||	!id)
+							return;
+	
+					// Redirect.
+						if (target.dataset.scrollInvisible == '1')
+							scrollToElement(target);
+						else
+							location.href = '#' + id;
+	
+				},
 				doNextSection = function() {
 	
 					var section;
@@ -496,11 +673,18 @@
 				},
 				sections = {};
 	
+	
+			// Expose doNextScrollPoint, doPreviousScrollPoint, doFirstScrollPoint, doLastScrollPoint.
+				window._nextScrollPoint = doNextScrollPoint;
+				window._previousScrollPoint = doPreviousScrollPoint;
+				window._firstScrollPoint = doFirstScrollPoint;
+				window._lastScrollPoint = doLastScrollPoint;
+	
 			// Expose doNextSection, doPreviousSection, doFirstSection, doLastSection.
-				window._next = doNextSection;
-				window._previous = doPreviousSection;
-				window._first = doFirstSection;
-				window._last = doLastSection;
+				window._nextSection = doNextSection;
+				window._previousSection = doPreviousSection;
+				window._firstSection = doFirstSection;
+				window._lastSection = doLastSection;
 	
 			// Override exposed scrollToTop.
 				window._scrollToTop = function() {
@@ -1825,12 +2009,11 @@
 		onvisible.add('#text01', { style: 'fade-left', speed: 1875, intensity: 10, delay: 1000, staggerOrder: '', replay: true });
 		onvisible.add('#text02', { style: 'fade-left', speed: 1875, intensity: 10, delay: 250, staggerOrder: '', replay: true });
 		onvisible.add('#buttons01', { style: 'fade-in', speed: 1500, intensity: 5, delay: 0, replay: true });
-		onvisible.add('#text05', { style: 'fade-in', speed: 1875, intensity: 10, delay: 500, staggerOrder: '', replay: true });
 		onvisible.add('#text06', { style: 'fade-in', speed: 2500, intensity: 10, delay: 500, staggerOrder: '', replay: true });
 		onvisible.add('#text07', { style: 'fade-in', speed: 1875, intensity: 10, delay: 500, staggerOrder: '', replay: true });
-		onvisible.add('#text08', { style: 'fade-in', speed: 1875, intensity: 10, delay: 500, staggerOrder: '', replay: true });
-		onvisible.add('#text09', { style: 'fade-in', speed: 1875, intensity: 10, delay: 500, staggerOrder: '', replay: true });
-		onvisible.add('#image01', { style: 'fade-in', speed: 1625, intensity: 1, delay: 0, staggerOrder: '', replay: false });
-		onvisible.add('#text10', { style: 'fade-in', speed: 1875, intensity: 10, delay: 500, staggerOrder: '', replay: true });
+		onvisible.add('#text08', { style: 'fade-in', speed: 1875, intensity: 10, delay: 0, staggerOrder: '', replay: false });
+		onvisible.add('#text09', { style: 'fade-in', speed: 1875, intensity: 10, delay: 125, staggerOrder: '', replay: false });
+		onvisible.add('#image01', { style: 'fade-in', speed: 1125, intensity: 1, delay: 0, staggerOrder: '', replay: false });
+		onvisible.add('#text10', { style: 'fade-in', speed: 1875, intensity: 10, delay: 125, staggerOrder: '', replay: true });
 
 })();
