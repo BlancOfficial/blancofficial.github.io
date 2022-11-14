@@ -1830,6 +1830,7 @@
 		onvisible.add('#text07', { style: 'fade-in', speed: 1875, intensity: 10, delay: 500, staggerOrder: '', replay: true });
 		onvisible.add('#text08', { style: 'fade-in', speed: 1875, intensity: 10, delay: 500, staggerOrder: '', replay: true });
 		onvisible.add('#text09', { style: 'fade-in', speed: 1875, intensity: 10, delay: 500, staggerOrder: '', replay: true });
+		onvisible.add('#image01', { style: 'fade-in', speed: 1625, intensity: 1, delay: 0, staggerOrder: '', replay: false });
 		onvisible.add('#text10', { style: 'fade-in', speed: 1875, intensity: 10, delay: 500, staggerOrder: '', replay: true });
 
 })();

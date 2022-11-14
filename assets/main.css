@@ -1014,18 +1014,14 @@ hr:before {
 	}
 	
 	#container01 {
-		--alignment: center;
-		--flex-alignment: center;
-		--indent-left: 1;
-		--indent-right: 1;
-		min-height: 38rem;
+		min-height: 24.75rem;
 	}
 	
 	#container01 > .wrapper > .inner {
-		--gutters: 1.5rem;
+		--gutters: 2rem;
 		--padding-horizontal: 2rem;
 		--padding-vertical: 3rem;
-		--spacing: 1rem;
+		--spacing: 0.75rem;
 	}
 	
 	#container01.columns > .wrapper > .inner {
@@ -1103,7 +1099,7 @@ hr:before {
 	}
 	
 	#container01.columns > .wrapper > .inner > .full {
-		min-height: 38rem;
+		min-height: 24.75rem;
 	}
 	
 	#container01.columns > .wrapper > .inner > .full > .full:first-child:last-child {
@@ -1117,19 +1113,15 @@ hr:before {
 	}
 	
 	#container01 > .wrapper > .inner > :nth-child(1) {
-		--alignment: center;
-		--flex-alignment: center;
+		--alignment: left;
+		--flex-alignment: flex-start;
 		--indent-left: 1;
-		--indent-right: 1;
+		--indent-right: 0;
 		min-height: 100% !important;
 		width: 100% !important;
 	}
 	
 	#container01 > .wrapper > .inner > :nth-child(2) {
-		--alignment: center;
-		--flex-alignment: center;
-		--indent-left: 1;
-		--indent-right: 1;
 		min-height: 100% !important;
 		width: 100% !important;
 	}
@@ -1162,7 +1154,7 @@ hr:before {
 	}
 	
 	#container01 > .wrapper > .inner {
-		--spacing: 1rem;
+		--spacing: 0.65625rem;
 	}
 }
 
@@ -1235,15 +1227,15 @@ hr:before {
 		--gutters: 1.5rem;
 		--padding-horizontal: 1.5rem;
 		--padding-vertical: 2.25rem;
-		--spacing: 0.875rem;
+		--spacing: 0.5625rem;
 	}
 	
 	#container01 {
-		min-height: 28.5rem;
+		min-height: 16.5rem;
 	}
 	
 	#container01.columns > .wrapper > .inner > .full {
-		min-height: 28.5rem;
+		min-height: 16.5rem;
 	}
 	
 	#icons01 {
