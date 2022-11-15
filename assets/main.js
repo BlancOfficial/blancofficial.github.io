@@ -2003,7 +2003,6 @@
 		};
 	
 	// "On Visible" animations.
-		onvisible.add('#text04', { style: 'fade-in', speed: 1875, intensity: 10, delay: 500, staggerOrder: '', replay: true });
 		onvisible.add('#container01', { style: 'fade-up', speed: 1000, intensity: 6, delay: 0, staggerOrder: '', replay: true });
 		onvisible.add('#icons01', { style: 'fade-right', speed: 1500, intensity: 5, delay: 0, stagger: 250, replay: true });
 		onvisible.add('#text01', { style: 'fade-left', speed: 1875, intensity: 10, delay: 1000, staggerOrder: '', replay: true });
