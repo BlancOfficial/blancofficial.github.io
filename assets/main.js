@@ -1190,7 +1190,6 @@
 	
 			}
 	
-	// Scroll events.
 		var scrollEvents = {
 	
 			/**
@@ -1210,7 +1209,7 @@
 					triggerElement: (('triggerElement' in o && o.triggerElement) ? o.triggerElement : o.element),
 					enter: ('enter' in o ? o.enter : null),
 					leave: ('leave' in o ? o.leave : null),
-					mode: ('mode' in o ? o.mode : 1),
+					mode: ('mode' in o ? o.mode : 3),
 					offset: ('offset' in o ? o.offset : 0),
 					initialState: ('initialState' in o ? o.initialState : null),
 					state: false,
@@ -1479,7 +1478,7 @@
 						scrollEvents.add({
 							element: i,
 							enter: enterHandler,
-							offset: 250
+							offset: 250,
 						});
 	
 				});
@@ -1537,25 +1536,63 @@
 					},
 				},
 				'slide-left': {
+					custom: true,
 					transition: function (speed, delay) {
-						return 'transform ' + speed + 's ease' + (delay ? ' ' + delay + 's' : '');
+	
+						this.style.setProperty('--onvisible-speed', speed + 's');
+	
+						if (delay) {
+	
+							this.style.transition = 'opacity 0s linear ' + delay + 's';
+							this.style.setProperty('--onvisible-delay', delay + 's');
+	
+						}
+	
 					},
 					rewind: function() {
-						this.style.transform = 'translateX(100vw)';
+	
+						this.style.animation = 'none';
+						this.style.opacity = 0;
+	
 					},
 					play: function() {
-						this.style.transform = 'none';
+	
+						this.style.opacity = 1;
+						this.style.animationName = 'onvisible-slide-left';
+						this.style.animationTimingFunction = 'ease';
+						this.style.animationDuration = 'var(--onvisible-speed)';
+						this.style.animationDelay = 'var(--onvisible-delay)';
+	
 					},
 				},
 				'slide-right': {
+					custom: true,
 					transition: function (speed, delay) {
-						return 'transform ' + speed + 's ease' + (delay ? ' ' + delay + 's' : '');
+	
+						this.style.setProperty('--onvisible-speed', speed + 's');
+	
+						if (delay) {
+	
+							this.style.transition = 'opacity 0s linear ' + delay + 's';
+							this.style.setProperty('--onvisible-delay', delay + 's');
+	
+						}
+	
 					},
 					rewind: function() {
-						this.style.transform = 'translateX(-100vw)';
+	
+						this.style.animation = 'none';
+						this.style.opacity = 0;
+	
 					},
 					play: function() {
-						this.style.transform = 'none';
+	
+						this.style.opacity = 1;
+						this.style.animationName = 'onvisible-slide-right';
+						this.style.animationTimingFunction = 'ease';
+						this.style.animationDuration = 'var(--onvisible-speed)';
+						this.style.animationDelay = 'var(--onvisible-delay)';
+	
 					},
 				},
 				'flip-forward': {
@@ -1782,8 +1819,6 @@
 					speed = parseInt('speed' in settings ? settings.speed : 1000) / 1000,
 					intensity = ((parseInt('intensity' in settings ? settings.intensity : 5) / 10) * 1.75) + 0.25,
 					delay = parseInt('delay' in settings ? settings.delay : 0) / 1000,
-					offset = parseInt('offset' in settings ? settings.offset : 0),
-					mode = parseInt('mode' in settings ? settings.mode : 3),
 					replay = 'replay' in settings ? settings.replay : false,
 					stagger = 'stagger' in settings ? (parseInt(settings.stagger) > -125 ? (parseInt(settings.stagger) / 1000) : false) : false,
 					staggerOrder = 'staggerOrder' in settings ? settings.staggerOrder : 'default',
@@ -1925,8 +1960,6 @@
 							scrollEvents.add({
 								element: e,
 								triggerElement: triggerElement,
-								offset: offset,
-								mode: mode,
 								initialState: state,
 								enter: children ? function() {
 	
