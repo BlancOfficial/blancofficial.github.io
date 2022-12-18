@@ -1086,8 +1086,8 @@
 						// Lsd units available?
 							if (client.flags.lsdUnits) {
 	
-								document.documentElement.style.setProperty('--viewport-height', '100dvh');
-								document.documentElement.style.setProperty('--background-height', '100lvh');
+								document.documentElement.style.setProperty('--viewport-height', '100svh');
+								document.documentElement.style.setProperty('--background-height', '100dvh');
 	
 							}
 	
@@ -1100,7 +1100,6 @@
 								};
 	
 								on('load', f);
-								on('resize', f);
 								on('orientationchange', function() {
 	
 									// Update after brief delay.
@@ -2042,7 +2041,6 @@
 		onvisible.add('#text02', { style: 'fade-left', speed: 1875, intensity: 10, delay: 250, staggerOrder: '', replay: true });
 		onvisible.add('#buttons01', { style: 'fade-in', speed: 1500, intensity: 5, delay: 0, replay: true });
 		onvisible.add('#text06', { style: 'fade-in', speed: 2500, intensity: 10, delay: 500, staggerOrder: '', replay: true });
-		onvisible.add('#text07', { style: 'fade-in', speed: 1875, intensity: 10, delay: 500, staggerOrder: '', replay: true });
 		onvisible.add('#text08', { style: 'fade-in', speed: 1875, intensity: 10, delay: 0, staggerOrder: '', replay: false });
 		onvisible.add('#text09', { style: 'fade-in', speed: 1875, intensity: 10, delay: 125, staggerOrder: '', replay: false });
 		onvisible.add('#image01', { style: 'fade-in', speed: 1125, intensity: 1, delay: 0, staggerOrder: '', replay: false });
