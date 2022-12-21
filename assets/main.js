@@ -2047,10 +2047,14 @@
 		onvisible.add('#text10', { style: 'fade-in', speed: 1875, intensity: 10, delay: 125, staggerOrder: '', replay: true });
 		onvisible.add('#text03', { style: 'fade-in', speed: 2500, intensity: 10, delay: 125, staggerOrder: '', replay: true });
 		onvisible.add('#buttons02', { style: 'fade-in', speed: 1500, intensity: 5, delay: 250, replay: true });
-		onvisible.add('#buttons03', { style: 'fade-in', speed: 1500, intensity: 5, delay: 250, replay: false });
+		onvisible.add('#buttons04', { style: 'fade-in', speed: 1500, intensity: 5, delay: 250, replay: false });
 		onvisible.add('#text05', { style: 'fade-in', speed: 2500, intensity: 10, delay: 125, staggerOrder: '', replay: true });
 		onvisible.add('#text13', { style: 'fade-in', speed: 2500, intensity: 10, delay: 125, staggerOrder: '', replay: true });
 		onvisible.add('#text15', { style: 'fade-in', speed: 2500, intensity: 10, delay: 125, staggerOrder: '', replay: true });
+		onvisible.add('#text16', { style: 'fade-in', speed: 2500, intensity: 10, delay: 125, staggerOrder: '', replay: true });
+		onvisible.add('#text19', { style: 'fade-in', speed: 2500, intensity: 10, delay: 125, staggerOrder: '', replay: true });
+		onvisible.add('#text21', { style: 'fade-in', speed: 2500, intensity: 10, delay: 125, staggerOrder: '', replay: true });
+		onvisible.add('#text23', { style: 'fade-in', speed: 2500, intensity: 10, delay: 125, staggerOrder: '', replay: true });
 		onvisible.add('#text11', { style: 'fade-in', speed: 2500, intensity: 10, delay: 125, staggerOrder: '', replay: true });
 
 })();
