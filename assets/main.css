@@ -751,6 +751,213 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	margin-top: 1rem;
 }
 
+#text03 {
+	color: rgba(144,33,236,0.71);
+	font-family: 'Barlow', sans-serif;
+	text-indent: 0.125rem;
+	font-size: 2.875em;
+	line-height: 1;
+	font-weight: 600;
+	-webkit-text-stroke: 0.03em #3B065C;
+	text-stroke: 0.03em #3B065C;
+}
+
+#text03 a {
+	text-decoration: underline;
+}
+
+#text03 a:hover {
+	text-decoration: none;
+}
+
+#text03 span.p:nth-child(n + 2) {
+	margin-top: 1rem;
+}
+
+#text04 {
+	color: rgba(144,33,236,0.71);
+	font-family: 'Barlow', sans-serif;
+	text-indent: 0.125rem;
+	font-size: 2.875em;
+	line-height: 1;
+	font-weight: 600;
+	-webkit-text-stroke: 0.03em #3B065C;
+	text-stroke: 0.03em #3B065C;
+}
+
+#text04 a {
+	text-decoration: underline;
+}
+
+#text04 a:hover {
+	text-decoration: none;
+}
+
+#text04 span.p:nth-child(n + 2) {
+	margin-top: 1rem;
+}
+
+#text05 {
+	color: #EAE4F0;
+	font-family: 'Barlow', sans-serif;
+	text-indent: 0.125rem;
+	font-size: 1.25em;
+	line-height: 1;
+	font-weight: 400;
+	-webkit-text-stroke: 0.03em #3B065C;
+	text-stroke: 0.03em #3B065C;
+}
+
+#text05 a {
+	text-decoration: underline;
+}
+
+#text05 a:hover {
+	text-decoration: none;
+}
+
+#text05 span.p:nth-child(n + 2) {
+	margin-top: 1rem;
+}
+
+#text07 {
+	color: rgba(144,33,236,0.71);
+	font-family: 'Barlow', sans-serif;
+	text-indent: 0.125rem;
+	font-size: 2.875em;
+	line-height: 1;
+	font-weight: 600;
+	-webkit-text-stroke: 0.03em #3B065C;
+	text-stroke: 0.03em #3B065C;
+}
+
+#text07 a {
+	text-decoration: underline;
+}
+
+#text07 a:hover {
+	text-decoration: none;
+}
+
+#text07 span.p:nth-child(n + 2) {
+	margin-top: 1rem;
+}
+
+#text13 {
+	color: #EAE4F0;
+	font-family: 'Barlow', sans-serif;
+	text-indent: 0.125rem;
+	font-size: 1.25em;
+	line-height: 1;
+	font-weight: 400;
+	-webkit-text-stroke: 0.03em #3B065C;
+	text-stroke: 0.03em #3B065C;
+}
+
+#text13 a {
+	text-decoration: underline;
+}
+
+#text13 a:hover {
+	text-decoration: none;
+}
+
+#text13 span.p:nth-child(n + 2) {
+	margin-top: 1rem;
+}
+
+#text14 {
+	color: rgba(144,33,236,0.71);
+	font-family: 'Barlow', sans-serif;
+	text-indent: 0.125rem;
+	font-size: 2.875em;
+	line-height: 1;
+	font-weight: 600;
+	-webkit-text-stroke: 0.03em #3B065C;
+	text-stroke: 0.03em #3B065C;
+}
+
+#text14 a {
+	text-decoration: underline;
+}
+
+#text14 a:hover {
+	text-decoration: none;
+}
+
+#text14 span.p:nth-child(n + 2) {
+	margin-top: 1rem;
+}
+
+#text15 {
+	color: #EAE4F0;
+	font-family: 'Barlow', sans-serif;
+	text-indent: 0.125rem;
+	font-size: 1.25em;
+	line-height: 1;
+	font-weight: 400;
+	-webkit-text-stroke: 0.03em #3B065C;
+	text-stroke: 0.03em #3B065C;
+}
+
+#text15 a {
+	text-decoration: underline;
+}
+
+#text15 a:hover {
+	text-decoration: none;
+}
+
+#text15 span.p:nth-child(n + 2) {
+	margin-top: 1rem;
+}
+
+#text12 {
+	color: rgba(144,33,236,0.71);
+	font-family: 'Barlow', sans-serif;
+	text-indent: 0.125rem;
+	font-size: 2.875em;
+	line-height: 1;
+	font-weight: 600;
+	-webkit-text-stroke: 0.03em #3B065C;
+	text-stroke: 0.03em #3B065C;
+}
+
+#text12 a {
+	text-decoration: underline;
+}
+
+#text12 a:hover {
+	text-decoration: none;
+}
+
+#text12 span.p:nth-child(n + 2) {
+	margin-top: 1rem;
+}
+
+#text11 {
+	color: #EAE4F0;
+	font-family: 'Barlow', sans-serif;
+	text-indent: 0.125rem;
+	font-size: 1.25em;
+	line-height: 1;
+	font-weight: 400;
+	-webkit-text-stroke: 0.03em #3B065C;
+	text-stroke: 0.03em #3B065C;
+}
+
+#text11 a {
+	text-decoration: underline;
+}
+
+#text11 a:hover {
+	text-decoration: none;
+}
+
+#text11 span.p:nth-child(n + 2) {
+	margin-top: 1rem;
+}
+
 .buttons {
 	cursor: default;
 	display: flex;
@@ -822,6 +1029,86 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	background-color: #5A0482 !important;
 }
 
+#buttons02 {
+	gap: 0.75rem;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#buttons02 li a {
+	display: inline-block;
+	width: auto;
+	height: 2.5rem;
+	line-height: 2.5rem;
+	padding: 0 1.25rem;
+	vertical-align: middle;
+	font-family: 'Barlow', sans-serif;
+	font-size: 1.125em;
+	font-weight: 800;
+	border-radius: 0rem;
+	direction: var(--site-language-direction);
+	overflow: hidden;
+	text-overflow: ellipsis;
+	transition: transform 0.5s ease, color 0.5s ease, background-color 0.5s ease, border-color 0.5s ease;
+}
+
+#buttons02 .button {
+	background-color: rgba(255,255,255,0.129);
+	color: #FFFFFF;
+	background-image: linear-gradient(207deg, #00FF94 0%, transparent 68%);
+	background-position: 0% 0%;
+	background-repeat: repeat;
+	background-size: cover;
+}
+
+#buttons02 .button:hover {
+	background-color: #9544C7 !important;
+}
+
+#buttons02 li a:hover {
+	transform: scale(1.1125);
+}
+
+#buttons03 {
+	gap: 0.75rem;
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+
+#buttons03 li a {
+	display: inline-block;
+	width: 100vw;
+	height: 2.5rem;
+	line-height: 2.5rem;
+	padding: 0 1.25rem;
+	vertical-align: middle;
+	font-family: 'Barlow', sans-serif;
+	font-size: 1.125em;
+	font-weight: 800;
+	border-radius: 0rem;
+	direction: var(--site-language-direction);
+	overflow: hidden;
+	text-overflow: ellipsis;
+	transition: transform 0.5s ease, color 0.5s ease, background-color 0.5s ease, border-color 0.5s ease;
+}
+
+#buttons03 .button {
+	background-color: rgba(255,255,255,0.129);
+	color: #FFFFFF;
+	background-image: linear-gradient(207deg, #00FF94 0%, transparent 68%);
+	background-position: 0% 0%;
+	background-repeat: repeat;
+	background-size: cover;
+}
+
+#buttons03 .button:hover {
+	background-color: #9544C7 !important;
+}
+
+#buttons03 li a:hover {
+	transform: scale(1.1125);
+}
+
 hr {
 	border: 0;
 	padding: 0;
@@ -837,6 +1124,41 @@ hr:before {
 }
 
 #divider01:before {
+	width: 50rem;
+	border-top: solid 1px transparent;
+	height: 1px;
+	margin-top: -0.5px;
+}
+
+#divider02:before {
+	width: 50rem;
+	border-top: solid 1px transparent;
+	height: 1px;
+	margin-top: -0.5px;
+}
+
+#divider03:before {
+	width: 50rem;
+	border-top: solid 1px transparent;
+	height: 1px;
+	margin-top: -0.5px;
+}
+
+#divider04:before {
+	width: 50rem;
+	border-top: solid 1px transparent;
+	height: 1px;
+	margin-top: -0.5px;
+}
+
+#divider06:before {
+	width: 50rem;
+	border-top: solid 1px transparent;
+	height: 1px;
+	margin-top: -0.5px;
+}
+
+#divider05:before {
 	width: 50rem;
 	border-top: solid 1px transparent;
 	height: 1px;
@@ -1122,6 +1444,78 @@ hr:before {
 		line-height: 2;
 	}
 	
+	#text03 {
+		text-indent: 0.09375rem;
+		letter-spacing: 0rem;
+		width: 100%;
+		font-size: 2.875em;
+		line-height: 1;
+	}
+	
+	#text04 {
+		text-indent: 0.09375rem;
+		letter-spacing: 0rem;
+		width: 100%;
+		font-size: 2.875em;
+		line-height: 1;
+	}
+	
+	#text05 {
+		text-indent: 0.09375rem;
+		letter-spacing: 0rem;
+		width: 100%;
+		font-size: 1.25em;
+		line-height: 1;
+	}
+	
+	#text07 {
+		text-indent: 0.09375rem;
+		letter-spacing: 0rem;
+		width: 100%;
+		font-size: 2.875em;
+		line-height: 1;
+	}
+	
+	#text13 {
+		text-indent: 0.09375rem;
+		letter-spacing: 0rem;
+		width: 100%;
+		font-size: 1.25em;
+		line-height: 1;
+	}
+	
+	#text14 {
+		text-indent: 0.09375rem;
+		letter-spacing: 0rem;
+		width: 100%;
+		font-size: 2.875em;
+		line-height: 1;
+	}
+	
+	#text15 {
+		text-indent: 0.09375rem;
+		letter-spacing: 0rem;
+		width: 100%;
+		font-size: 1.25em;
+		line-height: 1;
+	}
+	
+	#text12 {
+		text-indent: 0.09375rem;
+		letter-spacing: 0rem;
+		width: 100%;
+		font-size: 2.875em;
+		line-height: 1;
+	}
+	
+	#text11 {
+		text-indent: 0.09375rem;
+		letter-spacing: 0rem;
+		width: 100%;
+		font-size: 1.25em;
+		line-height: 1;
+	}
+	
 	#buttons01 {
 		gap: 0.75rem;
 	}
@@ -1131,7 +1525,45 @@ hr:before {
 		font-size: 1.125em;
 	}
 	
+	#buttons02 {
+		gap: 0.75rem;
+	}
+	
+	#buttons02 li a {
+		letter-spacing: 0rem;
+		font-size: 1.125em;
+	}
+	
+	#buttons03 {
+		gap: 0.75rem;
+	}
+	
+	#buttons03 li a {
+		letter-spacing: 0rem;
+		font-size: 1.125em;
+	}
+	
 	#divider01:before {
+		width: 50rem;
+	}
+	
+	#divider02:before {
+		width: 50rem;
+	}
+	
+	#divider03:before {
+		width: 50rem;
+	}
+	
+	#divider04:before {
+		width: 50rem;
+	}
+	
+	#divider06:before {
+		width: 50rem;
+	}
+	
+	#divider05:before {
 		width: 50rem;
 	}
 	
@@ -1164,6 +1596,21 @@ hr:before {
 	
 	#buttons01 li a {
 		max-width: 32rem;
+		width: 100%;
+	}
+	
+	#buttons02 {
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+	
+	#buttons02 li a {
+		max-width: 32rem;
+		width: 100%;
+	}
+	
+	#buttons03 li a {
+		max-width: 100%;
 		width: 100%;
 	}
 }
@@ -1236,7 +1683,51 @@ hr:before {
 		font-size: 0.75em;
 	}
 	
+	#text03 {
+		font-size: 2em;
+	}
+	
+	#text04 {
+		font-size: 2em;
+	}
+	
+	#text05 {
+		font-size: 1.25em;
+	}
+	
+	#text07 {
+		font-size: 2em;
+	}
+	
+	#text13 {
+		font-size: 1.25em;
+	}
+	
+	#text14 {
+		font-size: 2em;
+	}
+	
+	#text15 {
+		font-size: 1.25em;
+	}
+	
+	#text12 {
+		font-size: 2em;
+	}
+	
+	#text11 {
+		font-size: 1.25em;
+	}
+	
 	#buttons01 {
+		gap: 0.5625rem;
+	}
+	
+	#buttons02 {
+		gap: 0.5625rem;
+	}
+	
+	#buttons03 {
 		gap: 0.5625rem;
 	}
 }

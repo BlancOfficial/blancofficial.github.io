@@ -2045,5 +2045,12 @@
 		onvisible.add('#text09', { style: 'fade-in', speed: 1875, intensity: 10, delay: 125, staggerOrder: '', replay: false });
 		onvisible.add('#image01', { style: 'fade-in', speed: 1125, intensity: 1, delay: 0, staggerOrder: '', replay: false });
 		onvisible.add('#text10', { style: 'fade-in', speed: 1875, intensity: 10, delay: 125, staggerOrder: '', replay: true });
+		onvisible.add('#text03', { style: 'fade-in', speed: 2500, intensity: 10, delay: 125, staggerOrder: '', replay: true });
+		onvisible.add('#buttons02', { style: 'fade-in', speed: 1500, intensity: 5, delay: 250, replay: true });
+		onvisible.add('#buttons03', { style: 'fade-in', speed: 1500, intensity: 5, delay: 250, replay: false });
+		onvisible.add('#text05', { style: 'fade-in', speed: 2500, intensity: 10, delay: 125, staggerOrder: '', replay: true });
+		onvisible.add('#text13', { style: 'fade-in', speed: 2500, intensity: 10, delay: 125, staggerOrder: '', replay: true });
+		onvisible.add('#text15', { style: 'fade-in', speed: 2500, intensity: 10, delay: 125, staggerOrder: '', replay: true });
+		onvisible.add('#text11', { style: 'fade-in', speed: 2500, intensity: 10, delay: 125, staggerOrder: '', replay: true });
 
 })();
